@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Courier New", "Courier", sans-serif;
+  background: -webkit-gradient(linear, left bottom, right top, from(#43389f), to(#3ec6ca));
+  background: linear-gradient(to top right, #43389f 0%, #3ec6ca 100%);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.number-container {
+  width: 200px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.one-container {
+  position: relative;
+  height: 100%;
+}
+
+.horizontal-one {
+  position: absolute;
+  top: 0px;
+  left: -16px;
+  width: 21px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.vertical-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 24px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.zero-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.zero {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  border: 24px solid #fff;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.first-zero {
+  top: 0;
+  left: 16px;
+  z-index: 2;
+}
+
+.second-zero {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+span {
+  margin: 0;
+  color: #fff;
+  line-height: 1;
+}
+
+.days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 0.8;
+  text-transform: uppercase;
+  font-size: 82px;
+  font-weight: 700;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=index.css.map */
