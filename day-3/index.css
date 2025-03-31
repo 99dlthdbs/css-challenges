@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #272c34;
+  color: #fff;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-animation: fadeInOut 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+          animation: fadeInOut 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+
+.sky {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  background-color: #7ddffc;
+}
+
+.sun {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+  background-color: #ffef00;
+  border-radius: 50%;
+  -webkit-transform-origin: 50% 400%;
+          transform-origin: 50% 400%;
+  -webkit-animation: rotateSun 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+          animation: rotateSun 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+
+.ground {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background-color: #f0de75;
+}
+
+.ground .shadow {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  z-index: 1;
+  width: 360px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+          clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+  -webkit-animation: rotateShadow 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+          animation: rotateShadow 4s cubic-bezier(0.4, 0, 0.49, 1) infinite;
+}
+
+.piramid {
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.piramid .side-left {
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+  width: 116px;
+  height: 57px;
+  -webkit-clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+          clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+  background-color: #f4f4f4;
+}
+
+.piramid .side-right {
+  position: absolute;
+  bottom: 0;
+  left: 93px;
+  width: 58px;
+  height: 57px;
+  -webkit-clip-path: polygon(30% 100%, 100% 100%, 0% 0%);
+          clip-path: polygon(30% 100%, 100% 100%, 0% 0%);
+  background-color: #dddada;
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotateSun {
+  0% {
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+  30% {
+    -webkit-transform: rotate(-28deg);
+            transform: rotate(-28deg);
+  }
+  100% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+}
+
+@keyframes rotateSun {
+  0% {
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+  30% {
+    -webkit-transform: rotate(-28deg);
+            transform: rotate(-28deg);
+  }
+  100% {
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
+  }
+}
+
+@-webkit-keyframes rotateShadow {
+  0% {
+    -webkit-transform: scaleY(0) scaleY(1);
+            transform: scaleY(0) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+            clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+  }
+  30% {
+    -webkit-transform: scaleY(1) scaleY(1);
+            transform: scaleY(1) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+            clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+  }
+  55% {
+    -webkit-transform: scaleY(0.4) scaleY(1);
+            transform: scaleY(0.4) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  75% {
+    -webkit-transform: scaleY(1) scaleY(1);
+            transform: scaleY(1) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: scaleY(0) scaleY(1);
+            transform: scaleY(0) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-clip-path: polygon(115px 0%, 231px 0%, 0% 100%);
+            clip-path: polygon(115px 0%, 231px 0%, 0% 100%);
+  }
+}
+
+@keyframes rotateShadow {
+  0% {
+    -webkit-transform: scaleY(0) scaleY(1);
+            transform: scaleY(0) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+            clip-path: polygon(115px 0%, 231px 0%, 100% 100%);
+  }
+  30% {
+    -webkit-transform: scaleY(1) scaleY(1);
+            transform: scaleY(1) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+            clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+  }
+  55% {
+    -webkit-transform: scaleY(0.4) scaleY(1);
+            transform: scaleY(0.4) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  75% {
+    -webkit-transform: scaleY(1) scaleY(1);
+            transform: scaleY(1) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: scaleY(0) scaleY(1);
+            transform: scaleY(0) scaleY(1);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-clip-path: polygon(115px 0%, 231px 0%, 0% 100%);
+            clip-path: polygon(115px 0%, 231px 0%, 0% 100%);
+  }
+}
+/*# sourceMappingURL=index.css.map */
