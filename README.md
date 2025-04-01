@@ -57,7 +57,15 @@
   <a href="https://codepen.io/why-ru-plum/pen/OPJBKQQ?editors=1100" style="text-decoration: none;">
     <div style="background: linear-gradient(135deg, #7ddffc, #f0de75); padding: 20px; border-radius: 10px; color: white; transition: transform 0.2s; width: 300px;">
       <h3 style="margin: 0;">Day 3</h3>
-      <p style="margin: 5px 0 0 0;">Second Challenge</p>
+      <p style="margin: 5px 0 0 0;">Third Challenge</p>
+      <div style="margin-top: 10px; font-size: 12px; opacity: 0.8;">🎨 Click to view</div>
+    </div>
+  </a>
+
+  <a href="https://codepen.io/why-ru-plum/pen/emYQXbr?editors=1100" style="text-decoration: none;">
+    <div style="background: linear-gradient(135deg, #6441A5, #2a0845); padding: 20px; border-radius: 10px; color: white; transition: transform 0.2s; width: 300px;">
+      <h3 style="margin: 0;">Day 4</h3>
+      <p style="margin: 5px 0 0 0;">Fourth Challenge</p>
       <div style="margin-top: 10px; font-size: 12px; opacity: 0.8;">🎨 Click to view</div>
     </div>
   </a>
